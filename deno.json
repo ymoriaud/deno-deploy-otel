@@ -1,0 +1,27 @@
+{
+  "name": "deno-deploy-otel",
+  "version": "0.0.1",
+  "exports": {},
+  "lock": false,
+  "tasks": {
+    "check": "deno check && deno lint && deno fmt",
+    "dev": "deno run --allow-net --watch main.ts",
+    "deploy": "deno deploy",
+    "deploy:create": "deno task deploy create",
+    "deploy:prod": "deno task deploy --prod"
+  },
+  "fmt": {
+    "exclude": [
+      "**/*.md"
+    ]
+  },
+  "imports": {
+    "@opentelemetry/api": "npm:@opentelemetry/api@^1.9.0",
+    "@oak/oak": "jsr:@oak/oak@^17.2.0"
+  },
+  "deploy": {
+    "org": "fatfish-lab",
+    "app": "deno-deploy-otel"
+  }
+}
+
