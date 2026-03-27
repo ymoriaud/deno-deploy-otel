@@ -26,10 +26,14 @@ It will return the book with the given ID. If the book is not found, it will ret
 
 ## Deploy
 
-You can deploy the application to Deno Deploy with the following command:
+You can deploy the application to Deno Deploy by clicking on
+
+[![Deploy on Deno](https://deno.com/button)](https://console.deno.com/new?clone=https://github.com/ymoriaud/deno-deploy-otel)
+
+or with the following command:
 
 ```bash
 deno deploy create
 ```
 
-You can then access the application at the URL provided by the command.
+Then access the application at the URL provided by the command, and visit the `/books/1` endpoint.
